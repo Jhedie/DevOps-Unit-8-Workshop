@@ -24,7 +24,7 @@ In the same folder as above:
  ```
  az webapp up --sku B1 --location germanywestcentral --name <APP_NAME> --resource-group <RG_NAME>
  ```
-> `<APP_NAME>` should be replaced with a name that is unique across all of Azure (as this application will be hosted at `<APP_NAME>.azurewebsites.net`). For example you could use your initials plus today's date e.g. `abc-01-01-1900-load-testing`. The tutors should provide you with a resource group to contain your resources for this workshop. Replace `<RG_NAME>` with the name of your resource group ending "\_Workshop".
+> `<APP_NAME>` should be replaced with a name that is unique across all of Azure (as this application will be hosted at `<APP_NAME>.azurewebsites.net`). For example you could use your initials plus today's date e.g. `abc-01-01-1900-load-testing`. The tutors should provide you with a resource group to contain your resources for this workshop. Replace `<RG_NAME>` with the name of your resource group.
  - The command should return the URL that the application is now hosted on. If you navigate to that URL in your browser it should take around 5 seconds before it loads with a message.
  - We've had to use Germany as the location as deployment to a UK region is blocked by policy in PluralSight's Azure Tenant (have a try with `uksouth` instead)
 
@@ -279,7 +279,7 @@ We now want to change our function so it saves the subtitle to the Azure Storage
     @app.table_output(
         arg_name="table",
         connection="AzureWebJobsStorage",
-        table_name="AcmeSubtitles",
+        table_name="AcmeTranslations",
         partition_key=""
     )
     ```
