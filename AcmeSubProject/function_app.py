@@ -121,7 +121,7 @@ def MyQueueTrigger(queue: func.QueueMessage, table: str, output: func.Out[str]) 
         
         # Create the output entity
         output_entity = {
-            "rowKey": row_key,
+            "rowKey": str(uuid.uuid4()),
             "languageCode": language_code,
             "translatedSubtitle": translated_subtitle,
             "partitionKey": "TranslatedSubtitles",
