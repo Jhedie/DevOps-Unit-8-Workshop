@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "AcmeProjectRequests",
+    "collectionId": "ecc195b0-0fd1-4f5f-988b-6046d0cf6703",
+    "dateExported": "2025-06-23T22:57:43.093Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0f331ebf-b485-40da-8e45-183166a35c03",
+            "colId": "ecc195b0-0fd1-4f5f-988b-6046d0cf6703",
+            "containerId": "",
+            "name": "https://jea-09-06-2025-functions.azurewebsites.net/api/addsubtitle",
+            "url": "https://jea-09-06-2025-functions.azurewebsites.net/api/addsubtitle",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-23T22:57:19.979Z",
+            "modified": "2025-06-23T22:57:19.979Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"subtitle\": \"happy its working now\",\n    \"languages\": [\"it\", \"de\"]\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Y991NDsnEgUhZz2j7jSmSDFeHzEHePjR_ba9XdPYZvwEYm5i7gnmfPBmC0ginzZwEM0QJZwCkhv_oeZanJTTTg"
+}
